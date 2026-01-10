@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.genspark.ai/api/files/s/WGxyXIno -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rotina Semanal Sugerida</title>
+<link href="./tailwind.min.css" rel="stylesheet">
+<link href="./css2(1)" rel="stylesheet">
+<link href="./all.min.css" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Background Decor */
+        .bg-swoosh {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 600px;
+            height: 600px;
+            background-color: #FDF2F8; /* Pink 50 */
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .content-wrapper {
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 60px;
+        }
+
+        /* Flex Grid for Calendar */
+        .calendar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            flex: 1;
+            align-content: center;
+            padding: 10px 0;
+        }
+
+        .day-card {
+            background-color: white;
+            border: 1px solid #FCE7F3;
+            border-bottom: 4px solid #F472B6; /* Pink 400 */
+            border-radius: 12px;
+            width: 260px;
+            height: 170px; /* Fixed height for consistency */
+            padding: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .day-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border-bottom-color: #BE185D;
+        }
+
+        .day-header {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            color: #9D174D; /* Pink 800 */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed #FCE7F3;
+            padding-bottom: 8px;
+        }
+
+        .day-icon {
+            font-size: 24px;
+            color: #DB2777; /* Pink 600 */
+            margin-bottom: 8px;
+        }
+
+        .note-box {
+            background-color: #FFF1F2;
+            border-left: 4px solid #BE185D;
+            padding: 12px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 10px;
+            width: fit-content;
+        }
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+
+
+</style></head>
+<body>
+<div class="slide-container">
+<!-- Background Elements -->
+<div class="bg-swoosh"></div>
+<div class="content-wrapper">
+<!-- Header -->
+<div class="mb-4">
+<p class="font-montserrat text-[#9D174D] font-bold uppercase tracking-wider text-sm mb-1">Planejamento de Cuidado</p>
+<h1 class="font-montserrat font-extrabold text-[#831843] text-4xl">
+                    Rotina semanal sugerida
+                </h1>
+<p class="text-gray-600 text-lg mt-1 font-light max-w-4xl">
+                    Manter a consistência é o segredo. Pequenos cuidados diários evitam grandes problemas.
+                </p>
+</div>
+<!-- Calendar Grid -->
+<div class="calendar-container">
+<!-- Segunda -->
+<div class="day-card">
+<div class="day-header">
+<span>Segunda</span>
+<i class="far fa-eye text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-search"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Inspeção Visual</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Examine as unhas em busca de vermelhidão ou dor. Limpe suavemente as laterais.
+                    </p>
+</div>
+<!-- Terça -->
+<div class="day-card">
+<div class="day-header">
+<span>Terça</span>
+<i class="far fa-calendar text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-wind"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Hidratação e Ar</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Hidrate a pele do pé (evite feridas abertas) e use calçados abertos para arejar.
+                    </p>
+</div>
+<!-- Quarta -->
+<div class="day-card">
+<div class="day-header">
+<span>Quarta</span>
+<i class="far fa-calendar text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-bath"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Cuidado Suave</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Banho morno curto. Se necessário, passe lixa fina apenas nas arestas, sem forçar.
+                    </p>
+</div>
+<!-- Quinta -->
+<div class="day-card">
+<div class="day-header">
+<span>Quinta</span>
+<i class="far fa-calendar text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-socks"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Descanso</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Dê descanso aos pés. Troque por meias de algodão limpas e evite sapatos apertados.
+                    </p>
+</div>
+<!-- Sexta -->
+<div class="day-card">
+<div class="day-header">
+<span>Sexta</span>
+<i class="far fa-calendar text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-cut"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Revisão de Corte</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Verifique se o comprimento está adequado. Corte reto apenas se a unha estiver longa.
+                    </p>
+</div>
+<!-- Sábado -->
+<div class="day-card">
+<div class="day-header">
+<span>Sábado</span>
+<i class="far fa-sun text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-shoe-prints"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Higiene de Calçados</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Coloque tênis e sapatos fechados para secar ao sol. Remova as palmilhas.
+                    </p>
+</div>
+<!-- Domingo -->
+<div class="day-card">
+<div class="day-header">
+<span>Domingo</span>
+<i class="far fa-check-circle text-pink-300"></i>
+</div>
+<div class="day-icon"><i class="fas fa-clipboard-check"></i></div>
+<h3 class="font-bold text-[#831843] text-sm mb-1">Checagem Geral</h3>
+<p class="text-gray-500 text-xs leading-relaxed">
+                        Avalie se houve melhora na semana. Se a dor persistir, planeje ir ao podólogo.
+                    </p>
+</div>
+</div>
+<!-- Footer Note -->
+<div class="mt-2">
+<div class="note-box shadow-sm">
+<p class="text-[#831843] text-sm font-medium">
+<i class="fas fa-info-circle mr-2"></i>
+<strong>Observação:</strong> Adapte esta rotina ao seu ritmo e interrompa imediatamente se houver dor intensa ou sangramento.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Page Number -->
+<div class="absolute bottom-6 right-10 text-gray-400 font-montserrat font-bold text-xl">
+            18
+        </div>
+</div>
+<script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9bbed7295cb0c547&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;4edd5f8ec12a48cfa682ab8261b80a79&quot;}" crossorigin="anonymous"></script>
+
+<script src="./slide-inner.js.baixados"></script></body></html>

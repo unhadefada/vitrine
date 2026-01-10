@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.genspark.ai/api/files/s/sQX8HZ3K -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Mitos e Verdades</title>
+<link href="./tailwind.min.css" rel="stylesheet">
+<link href="./css2(2)" rel="stylesheet">
+<link href="./all.min.css" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Split Background */
+        .bg-split {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            z-index: 0;
+        }
+        .bg-left {
+            flex: 1;
+            background-color: #FFF1F2; /* Rose 50 */
+            border-right: 1px solid #FFE4E6;
+        }
+        .bg-right {
+            flex: 1;
+            background-color: #ECFDF5; /* Emerald 50 */
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 60px;
+        }
+
+        /* Header Area */
+        .header-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Columns Container */
+        .columns-container {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            transition: transform 0.2s;
+        }
+        
+        /* Myth Styles */
+        .myth-card {
+            border-left: 6px solid #E11D48; /* Rose 600 */
+        }
+        .myth-icon-box {
+            background-color: #FFE4E6;
+            color: #E11D48;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .myth-label {
+            color: #E11D48;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        /* Truth Styles */
+        .truth-card {
+            border-left: 6px solid #059669; /* Emerald 600 */
+        }
+        .truth-icon-box {
+            background-color: #D1FAE5;
+            color: #059669;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .truth-label {
+            color: #059669;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        /* Center VS Badge */
+        .vs-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FFFFFF;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: #4B5563;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 20;
+            border: 4px solid #F3F4F6;
+        }
+
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+
+
+</style></head>
+<body>
+<div class="slide-container">
+<!-- Split Background -->
+<div class="bg-split">
+<div class="bg-left"></div>
+<div class="bg-right"></div>
+</div>
+<!-- Center Badge -->
+<!-- Content -->
+<div class="content-wrapper">
+<!-- Header -->
+<div class="header-area">
+<p class="font-montserrat text-gray-500 font-bold uppercase tracking-widest text-sm mb-2">Desmistificando Cuidados</p>
+<h1 class="font-montserrat font-extrabold text-[#831843] text-4xl">
+                Mitos e Verdades sobre Unhas Encravadas
+            </h1>
+</div>
+<!-- Columns -->
+<div class="columns-container relative">
+<!-- Center VS Badge positioned absolutely relative to container -->
+<div class="vs-badge">VS</div>
+<!-- Mitos Column -->
+<div class="column">
+<div class="text-center mb-2">
+<h2 class="font-montserrat font-bold text-[#9F1239] text-2xl flex justify-center items-center gap-2">
+<i class="fas fa-times-circle"></i> O que dizem por aí (Mitos)
+                    </h2>
+</div>
+<!-- Myth 1 -->
+<div class="card myth-card">
+<div class="myth-icon-box"><i class="fas fa-times"></i></div>
+<div>
+<span class="myth-label font-montserrat">Mito</span>
+<p class="text-gray-700 font-semibold mb-1">"Cortar um V no meio da unha resolve."</p>
+<p class="text-gray-500 text-sm">Isso não altera o crescimento lateral e pode enfraquecer a lâmina da unha.</p>
+</div>
+</div>
+<!-- Myth 2 -->
+<div class="card myth-card">
+<div class="myth-icon-box"><i class="fas fa-times"></i></div>
+<div>
+<span class="myth-label font-montserrat">Mito</span>
+<p class="text-gray-700 font-semibold mb-1">"Só calçado apertado causa o problema."</p>
+<p class="text-gray-500 text-sm">Corte incorreto, genética e traumas também são grandes responsáveis.</p>
+</div>
+</div>
+<!-- Myth 3 -->
+<div class="card myth-card">
+<div class="myth-icon-box"><i class="fas fa-times"></i></div>
+<div>
+<span class="myth-label font-montserrat">Mito</span>
+<p class="text-gray-700 font-semibold mb-1">"Colocar algodão bem fundo sempre ajuda."</p>
+<p class="text-gray-500 text-sm">Inserir profundamente pode reter bactérias e piorar a infecção.</p>
+</div>
+</div>
+</div>
+<!-- Verdades Column -->
+<div class="column">
+<div class="text-center mb-2">
+<h2 class="font-montserrat font-bold text-[#065F46] text-2xl flex justify-center items-center gap-2">
+<i class="fas fa-check-circle"></i> O que realmente funciona
+                    </h2>
+</div>
+<!-- Truth 1 -->
+<div class="card truth-card">
+<div class="truth-icon-box"><i class="fas fa-check"></i></div>
+<div>
+<span class="truth-label font-montserrat">Verdade</span>
+<p class="text-gray-700 font-semibold mb-1">"Corte reto é o mais seguro."</p>
+<p class="text-gray-500 text-sm">Manter os cantos livres da pele previne que a unha entre na carne ao crescer.</p>
+</div>
+</div>
+<!-- Truth 2 -->
+<div class="card truth-card">
+<div class="truth-icon-box"><i class="fas fa-check"></i></div>
+<div>
+<span class="truth-label font-montserrat">Verdade</span>
+<p class="text-gray-700 font-semibold mb-1">"Formato da unha influencia."</p>
+<p class="text-gray-500 text-sm">Unhas muito curvadas (em telha) têm tendência natural a encravar.</p>
+</div>
+</div>
+<!-- Truth 3 -->
+<div class="card truth-card">
+<div class="truth-icon-box"><i class="fas fa-check"></i></div>
+<div>
+<span class="truth-label font-montserrat">Verdade</span>
+<p class="text-gray-700 font-semibold mb-1">"Higiene previne complicações."</p>
+<p class="text-gray-500 text-sm">Manter ferramentas e pés limpos é essencial para evitar inflamações.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Number -->
+<div class="absolute bottom-6 right-10 text-gray-400 font-montserrat font-bold text-xl">
+            21
+        </div>
+</div>
+<script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9bbed7296cc4c547&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;4edd5f8ec12a48cfa682ab8261b80a79&quot;}" crossorigin="anonymous"></script>
+
+<script src="./slide-inner.js.baixados"></script></body></html>

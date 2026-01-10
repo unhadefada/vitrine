@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.genspark.ai/api/files/s/zhLIItMS -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>O que evitar para não piorar</title>
+<link href="./tailwind.min.css" rel="stylesheet">
+<link href="./css2(2)" rel="stylesheet">
+<link href="./all.min.css" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Background Accents */
+        .bg-accent-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100%;
+            background-color: #FFF1F2; /* Very light rose */
+            z-index: 0;
+        }
+
+        .bg-pattern {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            /* Replaced radial-gradient with background color and opacity for compatibility */
+            background-color: #FECDD3;
+            opacity: 0.2;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            padding: 60px 80px;
+            gap: 60px;
+        }
+
+        .left-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .alert-box {
+            flex: 1.4;
+            background-color: #FFF5F5;
+            border: 2px solid #FCA5A5; /* Red 300 */
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .alert-icon-wrapper {
+            position: absolute;
+            top: -40px;
+            right: 40px;
+            width: 80px;
+            height: 80px;
+            background-color: #EF4444; /* Red 500 */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        .warning-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 14px;
+            color: #7F1D1D; /* Red 900 */
+            font-size: 1.05rem;
+            line-height: 1.4;
+        }
+
+        .warning-list li::before {
+            content: '\f05e'; /* fa-ban */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #EF4444; /* Red 500 */
+        }
+        
+        .decoration-line {
+            width: 60px;
+            height: 6px;
+            background-color: #BE185D;
+            border-radius: 3px;
+            margin-bottom: 24px;
+        }
+
+    </style>
+<style id="slide-selected-style">
+  [data-slide-selected]::before
+  /* [data-slide-hover-selected]::before */ {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 0px;
+    outline: 2px solid #0f7fff !important;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+ /* [data-slide-hover-selected], */
+  [data-slide-selected] {
+    position: relative;
+    outline: none;
+    cursor: default;
+  }
+
+  img[data-slide-selected],
+  img[data-slide-hover-selected],
+  [data-slide-hover-selected],
+  [item-slide-click-selected],
+  [item-slide-selected] {
+    border: 2px solid #0f7fff !important;
+  }
+
+
+</style></head>
+<body>
+<div class="slide-container">
+<!-- Background Elements -->
+<div class="bg-accent-left"></div>
+<div class="bg-pattern"></div>
+<div class="content-wrapper">
+<!-- Left Panel: Context & Introduction -->
+<div class="left-panel">
+<div class="mb-2">
+<p class="font-montserrat text-[#BE185D] font-bold uppercase tracking-widest text-sm mb-2">Cuidados Importantes</p>
+<div class="decoration-line"></div>
+</div>
+<h1 class="font-montserrat font-extrabold text-[#831843] text-5xl leading-tight mb-8">
+                O que evitar <br>
+<span class="text-[#BE185D]">para não piorar</span>
+</h1>
+<p class="text-gray-700 text-xl leading-relaxed mb-8">
+                Muitas vezes, na tentativa de aliviar a dor, acabamos cometendo erros que agravam a inflamação. Saber o que <strong>não fazer</strong> é tão importante quanto o tratamento em si.
+            </p>
+<div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#BE185D]">
+<p class="text-[#831843] font-semibold italic text-lg">
+                    "Evitar a manipulação excessiva é o primeiro passo para a recuperação da unha."
+                </p>
+</div>
+</div>
+<!-- Right Panel: The Alert Box -->
+<div class="alert-box">
+<div class="alert-icon-wrapper">
+<i class="fas fa-hand-paper text-white text-4xl"></i>
+</div>
+<h2 class="font-montserrat font-bold text-[#991B1B] text-2xl mb-6 border-b border-red-200 pb-4">
+                Pare imediatamente estas práticas:
+            </h2>
+<ul class="warning-list font-medium">
+<li>
+<strong>Cutucar a pele lateral:</strong> tentar afastar a pele ou retirar pedaços da unha com as próprias mãos aumenta o risco de infecção.
+                </li>
+<li>
+<strong>Retirar cutícula profunda:</strong> remove a barreira natural de proteção, facilitando a entrada de bactérias.
+                </li>
+<li>
+<strong>Esmalte sobre inflamação:</strong> produtos químicos podem irritar a ferida e impedir a observação da cor da pele.
+                </li>
+<li>
+<strong>Bandagens muito apertadas:</strong> prejudicam a circulação e aumentam a dor local.
+                </li>
+<li>
+<strong>Calçados inadequados:</strong> sapatos de bico fino, duros ou salto alto comprimem os dedos e agravam o quadro.
+                </li>
+<li>
+<strong>Esforço excessivo:</strong> evite longas caminhadas ou corridas enquanto houver dor aguda.
+                </li>
+<li>
+<strong>Locais duvidosos:</strong> evite fazer as unhas em salões sem autoclave ou higiene rigorosa dos instrumentos.
+                </li>
+</ul>
+</div>
+</div>
+<!-- Footer Number -->
+<div class="absolute bottom-6 right-10 text-gray-400 font-montserrat font-bold text-xl">
+        17
+    </div>
+</div>
+<script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9bbed7295c9ec547&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;4edd5f8ec12a48cfa682ab8261b80a79&quot;}" crossorigin="anonymous"></script>
+
+<script src="./slide-inner.js.baixados"></script></body></html>
